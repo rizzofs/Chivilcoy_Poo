@@ -21,6 +21,8 @@ public class TestTarea {
         System.out.println("¿La tarea está completa? " + tarea.esCompleta());
 
         System.out.println("¿La tarea está vencida? " + tarea.esta_vencida());
+
+        System.out.println("hola");
     }
 }
 
