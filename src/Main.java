@@ -1,17 +1,29 @@
+import java.time.LocalDate;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        tp1_5.Tarea tarea = new tp1_5().new Tarea("Hacer ejercicio", tp1_5.Prioridad.PENDIENTE, false, LocalDate.now().plusDays(3));
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Descripción de la tarea: " + tarea.mostrar());
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        tarea.crear_descripcion("Hacer ejercicio en el gimnasio");
+        System.out.println("Nueva descripción de la tarea: " + tarea.mostrar());
+
+        tarea.asignar_prioridad(tp1_5.Prioridad.EN_PROCESO);
+        System.out.println("Prioridad de la tarea: " + tarea.obtener_prioridad());
+
+
+        tarea.fecha_limite(LocalDate.now().plusDays(2));
+        System.out.println("Fecha límite de la tarea: " + tarea.obtener_fecha());
+
+
+        tarea.Esta_finalizada(true);
+        System.out.println("¿La tarea está completa? " + tarea.esCompleta());
+
+        System.out.println("¿La tarea está vencida? " + tarea.esta_vencida());
+
+        System.out.println("hola");
     }
 }

@@ -1,4 +1,4 @@
-import java.time.LocalDate;
+/*import java.time.LocalDate;
 
 public class TestTarea {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class TestTarea {
 
         tarea.asignar_prioridad(tp1_5.Prioridad.EN_PROCESO);
         System.out.println("Prioridad de la tarea: " + tarea.obtener_prioridad());
-        ;
+
 
         tarea.fecha_limite(LocalDate.now().plusDays(2));
         System.out.println("Fecha límite de la tarea: " + tarea.obtener_fecha());
@@ -24,5 +24,5 @@ public class TestTarea {
 
         System.out.println("hola");
     }
-}
+}*/
 
